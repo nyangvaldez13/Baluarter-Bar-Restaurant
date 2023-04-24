@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Your description">
+        <meta name="author" content="Your name">
+
+        <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+        <meta property="og:site_name" content="" /> <!-- website name -->
+        <meta property="og:site" content="" /> <!-- website link -->
+        <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+        <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+        <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+        <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+        <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+        <!-- Webpage Title -->
+        <title>Baluarte Bar | Home</title>
+        
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+        * {
+            box-sizing: border-box
+        }
+
+        .slideshow {
+            position: relative;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+           
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            padding: 300px 85px; /*updated padding */
+            top: 50%;
+            margin-top: -350px;
+            color: rgb(255, 247, 247);
+            opacity: 0.6; /* add opacity property here */
+            text-shadow: 1px 1px 2px #000000;
+            font-size: 68px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            text-decoration: none; /* add this line */
+        }
+        .prev{
+            left: 0;
+        }
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover {
+            color:#f2f2f2;
+            background-color: rgba(0, 0, 0, 0.473);
+            text-decoration: none; /* add this line */
+            background: linear-gradient(to left, rgba(0, 0, 0, 0.021), rgba(0, 0, 0, 0.815));
+        }
+        .next:hover {
+            color:#f2f2f2;
+            background-color: rgba(0, 0, 0, 0.473);
+            text-decoration: none; /* add this line */
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.021), rgba(0, 0, 0, 0.815));
+        }
+        /* Caption text */
+        .slide-header {
+            position: absolute;
+            bottom: 178px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 64px;
+            font-weight: bold;
+            color: #fff;
+            padding: 20px;
+            animation-name: zoom-in;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+       .text {
+            color: #f2f2f2;
+            font-size: 20px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 95px;
+            width: 100%;
+            text-align: center;
+            animation-name: zoom-in;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        .text2 {
+            color: #f2f2f2;
+            font-size: 20px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 123px;
+            width: 100%;
+            text-align: center;
+            animation-name: zoom-in;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot-container {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .dot {
+            cursor: pointer;
+            height: 12px;
+            width: 12px;
+            margin: 0 2px;
+            border: 2px solid #ff2121;
+            border-color: #ff1911;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            position: relative;
+            z-index: 1;
+        }
+        .active, .dot:hover {
+            background-color: #ff1911;
+        }
+        @keyframes zoom-in {
+        from {
+            opacity: 0;
+            transform: scale(0.5);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 9s;
+            animation-name: fade;
+            animation-duration: 9s;
+        }
+        @-webkit-keyframes fade {
+        from {opacity: 1} 
+        to {opacity: 1}
+        }
+        @keyframes fade {
+        from {opacity: 1} 
+        to {opacity: 1}
+        }
+        /* On smaller screens, decrease text size 
+        @media (max-width: 300px) {
+        .prev, .next, .text {font-size: 6px}
+        .text {
+            margin-top: 15rem;
+            opacity: 0;
+        }
+        .dot{
+            height: 5px;
+            width: 5px;
+        }}
+        @media (max-width: 500px) {
+        .prev, .next,.text {font-size: 8px}
+        .text {
+            display: none;
+            
+        }
+        .dot{
+            height: 7px;
+            width: 7px;
+        }}*/
+        /* Responsive */
+@media only screen and (max-width: 500px) {
+  .navbar .logo-image img {
+    width: 60px;
+	height: 30px;
+  }
+
+  .slide-header {
+    bottom: 56px;
+    font-size: 2rem;
+  }
+
+  .text {
+    bottom: 17px;
+    font-size: 1rem;
+  }
+
+  .text2 {
+    bottom: 38px;
+    font-size: 1rem;
+  }
+
+  .prev, .next {
+    padding: 82px 85px; /*updated padding */
+    margin-top: -88px;
+    font-size: 3.5rem;
+    
+  }
+
+  .prev{
+    left: -10%;
+    }
+    /* Position the "next button" to the right */
+   .next {
+     right: -10%;
+    }
+
+  .dot-container {
+    padding: 10px;
+    display: none;
+  }
+
+  .dot {
+    bottom: -12px;
+    height: 7px;
+    width: 7px;
+    margin: 0 3px;
+  }
+}
+        </style>
+
+        <!-- Favicon  -->
+        <link rel="icon" href="images/baluarte-logo.jpg">
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#navbarExample">
+        
+        <!-- Navigation -->
+        <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+            <div class="container">
+
+                <!-- Image Logo -->
+                <a class="navbar-brand logo-image" href="home.html"><img src="images/barbar.png" alt="alternative"></a> 
+
+                <!-- Text Logo - Use this if you don't have a graphic logo -->
+                <!-- <a class="navbar-brand logo-text" href="index.html">Vera</a> -->
+
+                <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#header">Home</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="trial.html">Membership</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="loyalty.php">Loyalty Card</a>
+                        </li>
+                       <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="home.html" id="home-dropdown" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="article.html">Article Details</a></li>
+                                <li><div class="dropdown-divider"></div></li>
+                                <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
+                                <li><div class="dropdown-divider"></div></li>
+                                <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index.html" id="membership-dropdown" data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="article.html">Article Details</a></li>
+                                <li><div class="dropdown-divider"></div></li>
+                                <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
+                                <li><div class="dropdown-divider"></div></li>
+                                <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                    <span class="nav-item sign-reg">
+                        <span class="sign-in">
+                            <a href="login.php">Sign In</i>
+                            </a>
+                        </span>
+                 
+                        <span class="sign-in">
+                            <a href="signup.php">Register</i>
+                            </a>
+                        </span>
+                    </span>
+                
+                </div> <!-- end of navbar-collapse -->
+            </div> <!-- end of container -->
+        </nav> <!-- end of navbar -->
+        <!-- end of navigation -->
+
+        <!-- slideshow -->
+        <div class="slideshow">
+         <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/home/opening-hours.jpg" style="width:100%">
+                <div class="slide-header">Opening Hours</div>
+                <div class="text">MONDAY - SUNDAY | 7:00 PM - 3:00 AM</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/home/promos.jpg" style="width:100%">
+                <div class="slide-header">Rewards</div>
+                <div class="text">All are exclusives for members.</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/home/merch.jpg" style="width:100%">
+                <div class="slide-header">Merchandise</div>
+                <div class="text2">Members can avail free merch.</div>
+                <div class="text" href="#" style="cursor: pointer; text-decoration: underline;">See More...</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div>
+         <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+         </div>
+        </div>
+        <!-- end of slideshow -->
+
+        
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-col first">
+                            <h6>About Website</h6>
+                            <p class="p-small">Aliquam ultrices turpis a auctor commodo. Etiam consectetur tincidunt elit ac euismod. Duis et finibus felis, non porttitor dolor</p>
+                        </div> <!-- end of footer-col -->
+                        <div class="footer-col second">
+                            <h6>Links</h6>
+                            <ul class="list-unstyled li-space-lg p-small">
+                                <li>Lorem ipsum <a href="terms.html">dolor sit amet</a>, <a href="privacy.html">consectetur </a></li>
+                                <li>Sed do eiusmod <a href="#">tempor </a>, <a href="#">incididunt ut</a>, <a href="#">labore et</a></li>
+                                <li>Ut enim <a href="index.html">ad minim</a>, <a href="#solutions">veniam</a>, <a href="#expertise">nostrud</a>, <a href="#projects">Projects</a></li>
+                            </ul>
+                        </div> <!-- end of footer-col -->
+                        <div class="footer-col third">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    
+                                </a>
+                            </span>
+                            <p class="p-small">Quam posuerei pellent esque vam <a href="mailto:contact@site.com"><strong>lorem@ipsum.com</strong></a></p>
+                        </div> <!-- end of footer-col -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of footer -->  
+        <!-- end of footer -->
+
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="p-small">Copyright © <a href="#your-link">Your name</a></p>
+                    </div> <!-- end of col -->
+                </div> <!-- enf of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of copyright --> 
+        <!-- end of copyright -->
+        
+
+        <!-- Back To Top Button -->
+        <button onclick="topFunction()" id="myBtn">
+            <img src="images/home/up-arrow.png" alt="alternative">
+        </button>
+        <!-- end of back to top button -->
+
+        <script>
+        /* slideshow */
+        var slideIndex = 1;
+            showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+
+                setTimeout(function() {
+                showSlides(slideIndex += 1);
+                }, 7000);
+        }      
+
+        // Get the current slide and elements to animate
+        var currentSlide = document.querySelector('.mySlides.fade.show');
+        var header = currentSlide.querySelector('.header');
+        var text = currentSlide.querySelector('.text');
+
+        // Add 'show' class to animate the text and header
+        header.classList.add('show');
+        text.classList.add('show');
+
+        </script>
+
+        <!-- Scripts -->
+        <script src="js/home/script.js"></script> <!-- Custom scripts -->
+        <script src="js/home/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+        <script src="js/home/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+        <script src="js/home/replaceme.min.js"></script> <!-- ReplaceMe for rotating text -->
+        
+        <script src="js/home/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+
+
+        <!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+
+    </body>
+</html>

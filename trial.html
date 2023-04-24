@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Your description">
+        <meta name="author" content="Your name">
+
+        <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+        <meta property="og:site_name" content="" /> <!-- website name -->
+        <meta property="og:site" content="" /> <!-- website link -->
+        <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+        <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+        <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+        <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+        <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+        <!-- Webpage Title -->
+        <title>Baluarte Bar | Membership</title>
+        
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome-all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap");
+
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  background: #000;
+}
+ul {
+  list-style: none;
+}
+
+/* -------------------- SECTIONS -------------------- */
+section {
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  color: #f5f5f7;
+}
+
+/* ------------ SCROLL SECTIONS ------------ */
+.scroll-section {
+  width: 100%;
+  height: calc(100vh - 44px);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Canvas Element */
+.canvas-elem {
+  width: 100%;
+  height: 100%;
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+/* Main & Message Element Positioning */
+.main-elem,
+.msg-elem {
+  width: max-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 5;
+}
+.msg-elem {
+  transform: translate(-50%, 0%);
+  opacity: 0;
+}
+
+/* Main Element Text Styling */
+.main-elem h1 {
+  font-size: 66px;
+  margin-top: 60px;
+  margin-bottom: 5px;
+}
+
+.main-elem span {
+  font-style: italic;
+}
+
+.main-elem ion-icon {
+  font-size: 28px;
+  transform: translateY(6px);
+}
+.main-elem a {
+  font-size: 18px;
+  font-weight: 500;
+  bottom: 20rem;
+  text-decoration: none;
+  background-color: transparent; 
+  border: 2px solid #ff1911; 
+  border-radius: 30px; 
+  padding: 8px 18px;
+  color: #ff1911;
+  cursor: pointer;
+}
+.main-elem a:hover {
+  text-decoration: none;
+  background-color: #ff1911;
+  color: #f5f5f7;
+}
+
+/* Message Element Text Styling */
+.msg-elem h2 {
+  font-size: 96px;
+}
+.msg-elem small {
+  font-size: 18px;
+  font-weight: 600;
+}
+.msg-elem p {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 68px;
+}
+
+/* SECTION #1 */
+.section-01 .canvas-elem canvas {
+  width: 900px;
+}
+
+/* ------------ STATIC SECTIONS ------------ */
+.static-section {
+  padding: 50px 0;
+  position: relative;
+}
+.static-section > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar .logo-image img {
+    width: 60px;
+	height: 30px;
+  }}
+        </style>
+
+        <!-- Favicon  -->
+        <link rel="icon" href="images/baluarte-logo.jpg">
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#navbarExample">
+        
+        <!-- Navigation -->
+        <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+            <div class="container">
+
+                <!-- Image Logo -->
+                <a class="navbar-brand logo-image" href="home.html"><img src="images/barbar.png" alt="alternative"></a> 
+
+                <!-- Text Logo - Use this if you don't have a graphic logo -->
+                <!-- <a class="navbar-brand logo-text" href="index.html">Vera</a> -->
+
+                <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="membership.html">Membership</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href="loyalty.php">Loyalty Card</a>
+                      </li>
+                       <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="home.html" id="home-dropdown" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="article.html">Article Details</a></li>
+                                <li><div class="dropdown-divider"></div></li>
+                                <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
+                                <li><div class="dropdown-divider"></div></li>
+                                <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index.html" id="membership-dropdown" data-bs-toggle="dropdown" aria-expanded="false">Membership</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="article.html">Article Details</a></li>
+                                <li><div class="dropdown-divider"></div></li>
+                                <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
+                                <li><div class="dropdown-divider"></div></li>
+                                <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                    <span class="nav-item sign-reg">
+                        <span class="sign-in">
+                            <a href="login.php">Sign In</i>
+                            </a>
+                        </span>
+                 
+                        <span class="sign-in">
+                            <a href="signup.php">Register</i>
+                            </a>
+                        </span>
+                    </span>
+                
+                </div> <!-- end of navbar-collapse -->
+            </div> <!-- end of container -->
+        </nav> <!-- end of navbar -->
+        <!-- end of navigation -->
+        
+        <!-- Hero-Lightpass -->
+        <main>
+          <!--<button class="btn-primary" style="position: absolute; top: 67%; left: 50%; transform: translate(-50%, -50%); z-index: 1; background-color: transparent; border: 2px solid #fe6b2a; border-radius: 30px; padding: 10px 22px; font-size: 16px; cursor: pointer;">Join Now</button>-->
+            <section class="section-01 scroll-section hero-lightpass">
+              <div class="main-elem">
+                <h1>Be a member now to <br>collect rewards</h1><br><br>
+                <a href="create-account.html">Join Now</a>
+              </div>
+              <div class="canvas-elem">
+                <canvas id="hero-lightpass"></canvas>
+              </div>
+              <div class="msg-elem msg-elem-01">
+                <p>
+                  Caption #1
+                </p>
+              </div>
+              <div class="msg-elem msg-elem-02">
+                <p>
+                    Caption #2
+                </p>
+              </div>
+              <div class="msg-elem msg-elem-03">
+                <p>
+                    Caption #3
+                </p>
+              </div>
+              <div class="msg-elem msg-elem-04">
+                <p>Caption #4</p>
+              </div>
+            </section>
+          </main>
+
+          <div class="points">
+            <h1>Collect points with every visits</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</h3>
+            <a class="pts-image"><img src="" alt=" "></a>
+          </div>
+
+          <div class="faqs">
+
+            <div class="faqs-container">
+            <h1>Frequently Asked Questions</h1>
+            <div class="question">
+              <h4>Question 1?<span class="arrow"></span></h4>
+              <div class="answer">
+                <p>Answer 1.</p>
+              </div>
+            </div>
+            
+            <div class="question">
+              <h4>Question 2?<span class="arrow"></span></h4>
+              <div class="answer">
+                <p>Answer 2.</p>
+              </div>
+            </div>
+            
+            <div class="question">
+              <h4>Question 3?<span class="arrow"></span></h4>
+              <div class="answer">
+                <p>Answer 3.</p>
+              </div>
+            </div>
+
+            <div class="question">
+              <h4>Question 4?<span class="arrow"></span></h4>
+              <div class="answer">
+                <p>Answer 4.</p>
+              </div>
+            </div>
+
+            <div class="question">
+              <h4>Question 5?<span class="arrow"></span></h4>
+              <div class="answer">
+                <p>Answer 5.</p>
+              </div>
+            </div>
+
+            <div class="question">
+              <h4>Question 6?<span class="arrow"></span></h4>
+              <div class="answer">
+                <p>Answer 6.</p>
+              </div>
+            </div>
+
+            <div class="question">
+              <h4>Question 7?<span class="arrow"></span></h4>
+              <div class="answer">
+                <p>Answer 7.</p>
+              </div>
+            </div>
+
+            <div class="question">
+              <h4>Question 8?<span class="arrow"></span></h4>
+              <div class="answer">
+                <p>Answer 8.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="terms-conditions">
+            <div class="tc_container">
+              <h1>Terms and Conditions</h1>
+              <h3>(Section is under development)</h3>
+            </div>
+          </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-col first">
+                            <h6>About Website</h6>
+                            <p class="p-small">Aliquam ultrices turpis a auctor commodo. Etiam consectetur tincidunt elit ac euismod. Duis et finibus felis, non porttitor dolor</p>
+                        </div> <!-- end of footer-col -->
+                        <div class="footer-col second">
+                          <h6>Links</h6>
+                          <ul class="list-unstyled li-space-lg p-small">
+                              <li>Lorem ipsum <a href="terms.html">dolor sit amet</a>, <a href="privacy.html">consectetur </a></li>
+                              <li>Sed do eiusmod <a href="#">tempor </a>, <a href="#">incididunt ut</a>, <a href="#">labore et</a></li>
+                              <li>Ut enim <a href="index.html">ad minim</a>, <a href="#solutions">veniam</a>, <a href="#expertise">nostrud</a>, <a href="#projects">Projects</a></li>
+                          </ul>
+                      </div> <!-- end of footer-col -->
+                      <div class="footer-col third">
+                          <span class="fa-stack">
+                              <a href="#your-link">
+                                  
+                              </a>
+                          </span>
+                          <span class="fa-stack">
+                              <a href="#your-link">
+                                  
+                              </a>
+                          </span>
+                          <span class="fa-stack">
+                              <a href="#your-link">
+                                  
+                              </a>
+                          </span>
+                          <span class="fa-stack">
+                              <a href="#your-link">
+                                  
+                              </a>
+                          </span>
+                          <p class="p-small">Quam posuerei pellent esque vam <a href="mailto:contact@site.com"><strong>lorem@ipsum.com</strong></a></p>
+                      </div> <!-- end of footer-col -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of footer -->  
+        <!-- end of footer -->
+
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="p-small">Copyright © <a href="#your-link">Your name</a></p>
+                    </div> <!-- end of col -->
+                </div> <!-- enf of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of copyright --> 
+        <!-- end of copyright -->
+        
+
+        <!-- Back To Top Button -->
+        <button onclick="topFunction()" id="myBtn">
+            <img src="Membership/images/up-arrow.png" alt="alternative">
+        </button>
+        <!-- end of back to top button -->
+
+        <script>
+          jQuery(document).ready(function() {
+  jQuery('.question h4').on('click', function() {
+    jQuery(this).toggleClass('rotate');
+    jQuery(this).siblings('.answer').slideToggle();
+  });
+});
+
+        </script>
+
+        <!-- Scripts -->
+  
+  <!-- Ionicons Usage -->
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> 
+  <!-- ScrollMagic CDN-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script> 
+
+  <!-- JS Files -->
+  <script src="Membership/scriptt.js"></script> <!-- Custom scripts -->
+  <script src="Membership/script-1.js"></script> 
+
+
+        <!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+
+    </body>
+</html>
